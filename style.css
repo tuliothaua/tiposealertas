@@ -1,0 +1,46 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: white;
+    background-color: rgb(20, 19, 19);
+    text-align: center;
+}
+
+
+h1 {
+
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 5px 5px 20px purple;
+}
+
+.nome-colorido {
+      color: rgb(101, 8, 104)
+}
+
+footer {
+    margin: 3%;
+    text-shadow: 5px 5px 10px purple;
+}
+
+button:hover {
+    background: #63525a;
+    transform: scale(1.2);
+}
+
+button {
+    margin: 3%;
+    text-decoration: none;
+    color: #4e1041;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: 0.2s;
+}
+

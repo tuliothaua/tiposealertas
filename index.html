@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>- Tipos e Alertas -</h1>
+    <div id="mensagem"></div>
+    
+<script>
+    let nome = prompt("Digite seu nome:");
+
+    let mensagem = `Olá, <span class="nome-colorido">${nome}</span>! Seja bem-vindo, conheça os tipos básicos e alertas do site.`;
+
+    document.write("<br> - Exemplos de Tipos: <br>")
+
+    var string = prompt("Digite algo para String: ")
+    string = string.toString()
+    document.write("<br> 1 - Exemplo de String: " + string)
+
+    var int = prompt("Digite um valor INTEIRO: ")
+    int = parseInt(int)
+     document.write("<br> 2 - Exemplo de Int: " + int)
+
+    var float = prompt("Digite um valor quebrado: ")
+        float = parseFloat(float)
+     document.write("<br> 3 - Exemplo de Float: " + float)
+
+    var boolean = prompt("Digite 1 para true ou 2 para false: ")
+    if (boolean == 1){
+        var boolean = true;
+    } else if (boolean == 2){
+        var boolean = false;
+    } else { 
+        var boolean = "Digitou um valor incorreto, apenas 1 ou 2!!! :("
+    }
+     document.write("<br> 4 - Exemplo de Boolean: " + boolean)
+    
+    document.getElementById("mensagem").innerHTML = mensagem;
+
+    alert("Obrigado por usar o meu site!")
+    
+</script>
+<br>
+<button onclick="dispararAlertas()">Ver em alertas</button>
+<script>
+     function dispararAlertas() {
+            alert("1 - Exemplo de String: " + string);
+            alert("2 - Exemplo de Int: " + int);
+            alert("3 - Exemplo de Float: " + float);
+            alert("4 - Exemplo de Boolean: " + boolean);
+        }
+</script>
+
+   
+    <footer>&copy; TúlioThauãDutra</footer>
+   
+</body>
+</html>
